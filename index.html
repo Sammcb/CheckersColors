@@ -1,0 +1,28 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./checkerscolors.css">
+<script src="./checkerscolors.js"></script>
+<title>CheckersColors</title>
+<body onresize="resizeBoard()" onload="loadBoard()">
+	<div class="center-column">
+		<h1 class="title">CheckersColors</h1>
+	</div>
+	<div id="inputs">
+		<div class="input-group">
+			<p>Pieces</p>
+			<input id="pieceLight" type="color" value="#e6d4a2" required oninput="theme()">
+			<p id="pieceLightColor"></p>
+			<input id="pieceDark" type="color" value="#403934" required oninput="theme()">
+			<p id="pieceDarkColor"></p>
+		</div>
+		<div class="input-group">
+			<p>Squares</p>
+			<input id="squareLight" type="color" value="#c4b497" required oninput="theme()">
+			<p id="squareLightColor"></p>
+			<input id="squareDark" type="color" value="#a88063" required oninput="theme()">
+			<p id="squareDarkColor"></p>
+		</div>
+	</div>
+	<div id="board-container">
+		<div id="board"></div>
+	</div>
+</body>
